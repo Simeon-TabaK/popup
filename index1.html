@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <button id="btnPopup" class="btnPopup">click me</button>
-        <div class="bg-modal">
-            <div class="modal-content">
-                <div class="close">+</div>
-                <form>
-                    <input type="text" placeholder="home">
-                    <input type="mail" placeholder="">
-                    <a href="">Submit</a>
-                </form>
-            </div>
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit ducimus voluptatem 
+                quidem maxime nemo voluptatibus aliquid et mollitia. At alias eos illum! Mollitia 
+                vel eveniet quibusdam voluptatibus neque quia dignissimos!</p>
         </div>
-        <script src="script.js"></script>
+    </div>
+    <button onclick="togglePopup()">Show Popup</button>
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 
